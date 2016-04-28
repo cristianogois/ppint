@@ -1,0 +1,16 @@
+SHOW DATABASES;
+
+CREATE DATABASE tutorial;
+
+USE tutorial;
+
+CREATE TABLE CLIENTE
+(
+	id SMALLINT UNSIGNED NOT NULL, /* NOT NULL dispensavel por ser uma PK */
+	nome VARCHAR(60) NOT NULL,
+	fone CHAR(10),
+	PRIMARY KEY (id)
+) ENGINE = InnoDB;
+
+
+DESCRIBE CLIENTE;
