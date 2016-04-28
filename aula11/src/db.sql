@@ -116,6 +116,10 @@ SELECT * FROM
 SELECT * FROM
 	PEDIDO p RIGHT JOIN CLIENTE c ON p.id_cliente = c.id;
 	
+SELECT c.nome, p.data, p.valor
+	FROM CLIENTE c INNER JOIN PEDIDO p ON c.id = p.id_cliente
+		WHERE p.valor = (SELECT max(valor) FROM PEDIDO);
+	
 
 
 
