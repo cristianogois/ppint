@@ -62,3 +62,7 @@ SELECT * FROM cliente WHERE id = 102;
 DELETE FROM cliente WHERE id = 104;
 
 SELECT * FROM cliente;
+
+INSERT INTO pedido VALUES (1001, '2010-06-15', 300.00, 102);
+
+INSERT INTO pedido VALUES (1002, '2010-06-15', 300.00, 110); /* ERRO */
