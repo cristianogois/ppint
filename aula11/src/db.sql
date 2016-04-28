@@ -54,7 +54,7 @@ SELECT * FROM cliente WHERE nome LIKE 'A%';
 SELECT * FROM cliente WHERE nome LIKE '%Couves';
 
 SELECT * FROM cliente WHERE nome LIKE '%Couves%';
-	
-	
-	
 
+UPDATE cliente SET fone = '1121212121' WHERE id = 102;
+
+SELECT * FROM cliente WHERE id = 102;
