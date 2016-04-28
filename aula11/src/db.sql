@@ -93,4 +93,31 @@ SELECT count(*) AS total FROM PEDIDO;
 SELECT * FROM PEDIDO WHERE data > '2010-06-16';
 
 SELECT max(valor) AS maior, avg(valor) AS media,
-min(valor) AS menor FROM PEDIDO;
+	min(valor) AS menor FROM PEDIDO;
+	
+SELECT * FROM CLIENTE, PEDIDO
+	WHERE CLIENTE.id = PEDIDO.id_cliente;
+	
+SELECT c.id, c.nome, p.data, p.valor FROM CLIENTE c, PEDIDO p
+	WHERE c.id = p.id_cliente;
+	
+SELECT * FROM
+	CLIENTE c INNER JOIN PEDIDO p ON c.id = p.id_cliente;
+	
+SELECT * FROM
+	CLIENTE c LEFT JOIN PEDIDO p ON c.id = p.id_cliente;
+	
+SELECT * FROM
+	CLIENTE c RIGHT JOIN PEDIDO p ON c.id = p.id_cliente;
+	
+SELECT * FROM
+	PEDIDO p RIGHT JOIN CLIENTE c ON p.id_cliente = c.id;
+	
+
+
+
+
+
+	
+
+
