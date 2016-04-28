@@ -33,7 +33,14 @@ DESCRIBE PEDIDO;
 INSERT INTO cliente VALUES (101, 'Zé das Couves', '1127991999');
 
 INSERT INTO CLIENTE VALUES
-(102, 'Maria das Couves', NULL),
-(103, 'Antonio das Couves', '1127991999'),
-(104, 'Ana das Couves', '1121213434');
+	(102, 'Maria das Couves', NULL),
+	(103, 'Antonio das Couves', '1127991999'),
+	(104, 'Ana das Couves', '1121213434');
+	
+SELECT * FROM cliente;
+
+SELECT * FROM cliente ORDER BY nome;
+	
+	
+	
 
