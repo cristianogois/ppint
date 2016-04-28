@@ -58,3 +58,7 @@ SELECT * FROM cliente WHERE nome LIKE '%Couves%';
 UPDATE cliente SET fone = '1121212121' WHERE id = 102;
 
 SELECT * FROM cliente WHERE id = 102;
+
+DELETE FROM cliente WHERE id = 104;
+
+SELECT * FROM cliente;
