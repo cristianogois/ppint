@@ -40,6 +40,14 @@ INSERT INTO CLIENTE VALUES
 SELECT * FROM cliente;
 
 SELECT * FROM cliente ORDER BY nome;
+
+SELECT * FROM cliente ORDER BY 1;
+
+SELECT 2 + 4;
+
+SELECT 2 + 4 AS Soma;
+
+SELECT id, nome FROM cliente WHERE fone IS NOT NULL;
 	
 	
 	
