@@ -98,6 +98,9 @@ SELECT max(valor) AS maior, avg(valor) AS media,
 SELECT * FROM CLIENTE, PEDIDO
 	WHERE CLIENTE.id = PEDIDO.id_cliente;
 	
+SELECT * FROM CLIENTE, PEDIDO
+	WHERE CLIENTE.id = PEDIDO.id_cliente AND id_cliente = 102; /*melhor fazer um JOIN*/
+	
 SELECT c.id, c.nome, p.data, p.valor FROM CLIENTE c, PEDIDO p
 	WHERE c.id = p.id_cliente;
 	
