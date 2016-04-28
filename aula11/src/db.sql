@@ -48,6 +48,12 @@ SELECT 2 + 4;
 SELECT 2 + 4 AS Soma;
 
 SELECT id, nome FROM cliente WHERE fone IS NOT NULL;
+
+SELECT * FROM cliente WHERE nome LIKE 'A%';
+
+SELECT * FROM cliente WHERE nome LIKE '%Couves';
+
+SELECT * FROM cliente WHERE nome LIKE '%Couves%';
 	
 	
 	
